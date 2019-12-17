@@ -1,0 +1,129 @@
+'.source.js, .source.jsx':
+  'React import':
+    'prefix': 'imr'
+    'body': """import React from 'react';"""
+
+  'React import component':
+    'prefix': 'imrc'
+    'body': """import React,{ Component } from 'react';"""
+
+  'Export default':
+    'prefix': 'ed'
+    'body': """export default ${1};"""
+
+  'React function component':
+    'prefix': 'rfc'
+    'body': """import React from 'react';
+
+    export default function ${1} () {
+      return <button>hello world</button>
+    }
+    """
+  'React class component':
+    'prefix': 'rcc'
+    'body': """import React, { Component } from 'react'
+
+      export default class ${$1} extends Component {
+
+        constructor(props) {
+          this.state = {}
+        }
+
+        render() {
+          return (
+            <button>
+
+            </button>
+          )
+        }
+      }
+    """
+
+  'React createRef':
+    'prefix': 'createref'
+    'body': """// Accessing Refs : myRef.current
+    const myRef = React.createRef();
+    """
+
+  'React createContext':
+    'prefix': 'createcontext'
+    'body': """const context = React.createContext(value);"""
+
+  'React useState hook':
+    'prefix': 'usestate'
+    'body': """const [state, setState] = useState(null)"""
+
+  'React useEffect hook':
+    'prefix': 'useeffect'
+    'body': """useEffect(() => {
+    }, []);"""
+
+  'React useCallback hook':
+    'prefix': 'usecallback'
+    'body': """// Returns a memoized callback.
+        const memoizedCallback = useCallback(() => {
+        doSomething(a, b);
+      },[a, b]);"""
+
+  'React useContext hook':
+    'prefix': 'usecontext'
+    'body': """const value = useContext(MyContext)"""
+
+  'React useReducer hook':
+    'prefix': 'usereducer'
+    'body': """
+    const initialState = {count: 0};
+
+    function reducer(state, action) {
+      switch (action.type) {
+        case 'increment':
+          return {count: state.count + 1};
+        case 'decrement':
+          return {count: state.count - 1};
+        default:
+          throw new Error();
+      }
+    }
+
+    const [state, dispatch] = useReducer(reducer, initialState, init);
+    """
+
+  'React useMemo hook':
+    'prefix': 'usememo'
+    'body': """// Returns a memoized value.
+    const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+    """
+
+  'React useRef hook':
+    'prefix': 'useref'
+    'body': """const refContainer = useRef(initialValue);
+    """
+
+  'React useFetch custom hook':
+    'prefix': 'usefetch'
+    'body': """import React from 'react';
+
+    const useFetch = (url, options) => {
+
+      const [response, setResponse] = React.useState(null);
+      const [error, setError] = React.useState(null);
+      const [isLoading, setIsLoading] = React.useState(true);
+
+      React.useEffect(() => {
+        (async () => {
+          try {
+            const res = await fetch(url, options);
+            const json = await res.json();
+            setResponse(json);
+            setIsLoading(false)
+          } catch (error) {
+            setError(error);
+          }
+        })()
+
+      }, []);
+      return { response, error, isLoading };
+    };
+
+    export default useFetch
+    """
