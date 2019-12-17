@@ -2,7 +2,7 @@
 
 ## Usage
 ```
-apm install atom-react
+apm install react-atom-snips
 ```
 
 ## Snippets
