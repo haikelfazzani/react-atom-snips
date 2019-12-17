@@ -2,6 +2,10 @@
 
 - React import -> **imr**
 
+- React import component -> **imrc**
+
+- Export default -> **ed**
+
 - React function component -> **rfc**
 
 - React class component -> **rcc**
