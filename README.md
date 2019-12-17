@@ -1,30 +1,31 @@
 # React js snippets
 
-- React import -> imr
+- React import -> **imr**
 
-- React function component -> rfc
+- React function component -> **rfc**
 
-- React class component -> rcc
+- React class component -> **rcc**
 
-- React createRef -> createref
+- React createRef -> **createref**
 
-- React createContext -> createcontext
+- React createContext -> **createcontext**
 
 ### Hooks
-- React useState hook -> usestate
+- React useState hook -> **usestate**
 
-- React useEffect hook -> useeffect
+- React useEffect hook -> **useeffect**
 
-- React useCallback hook -> usecallback
+- React useCallback hook -> **usecallback**
 
-- React useContext hook -> usecontext
+- React useContext hook -> **usecontext**
 
-- React useReducer hook -> usereducer
+- React useReducer hook -> **usereducer**
 
-- React useMemo hook -> usememo
+- React useMemo hook -> **usememo**
 
-- React useRef hook -> useref
+- React useRef hook -> **useref**
 
-- React useFetch custom hook -> usefetch
+### Custom hooks
+- React useFetch custom hook -> **usefetch**  
 
-### Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets
+> Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets

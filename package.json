@@ -4,7 +4,8 @@
   "description": "Reactjs snippets vscode like",
   "keywords": [
     "react",
-    "snippets"
+    "snippets",
+    "hooks"
   ],
   "author": "Haikel Fazzani",
   "license": "MIT",
