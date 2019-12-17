@@ -1,4 +1,4 @@
-# ❤️ React js snippets
+# ❤️ React js snippets for Atom
 
 ## Usage
 ```
@@ -59,7 +59,7 @@ const listItems = numbers.map((number) => <li key={number}>{number}</li>);
 2.	Create your branch: `git checkout -b my-new-branch`
 3.	Commit your changes: `git commit -m 'Add some new features'`
 4.	Push to the branch: `git push origin my-new-branch`
-5.  Submit a pull request
+5.  Submit a pull request ✔
 
 > Contributions are greatly appreciated. Please feel free..
 

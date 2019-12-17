@@ -51,12 +51,12 @@
 
   'React useState hook':
     'prefix': 'usestate'
-    'body': """const [state, setState] = useState(null)"""
+    'body': """const [state, setState] = useState(initialState)"""
 
   'React useEffect hook':
     'prefix': 'useeffect'
     'body': """useEffect(() => {
-
+      ${$1}
     }, []);"""
 
   'React useCallback hook':
@@ -73,7 +73,7 @@
   'React useReducer hook':
     'prefix': 'usereducer'
     'body': """
-    const initialState = {count: 0};
+    const initialState = { count: 0 };
 
     function reducer(state, action) {
       switch (action.type) {
@@ -97,8 +97,7 @@
 
   'React useRef hook':
     'prefix': 'useref'
-    'body': """const refContainer = useRef(initialValue);
-    """
+    'body': """const refContainer = useRef(initialValue);"""
 
   'React useFetch custom hook':
     'prefix': 'usefetch'
@@ -126,7 +125,7 @@
       return { response, error, isLoading };
     };
 
-    export default useFetch
+    export default useFetch;
     """
 
   'React render()':
