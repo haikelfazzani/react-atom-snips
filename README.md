@@ -50,7 +50,7 @@ apm install atom-react
 | elements | **rcmap** |
 ```jsx
 const numbers = [1, 2, 3, 4, 5];
-  const listItems = numbers.map((number) => <li key={number}>{number}</li>);
+const listItems = numbers.map((number) => <li key={number}>{number}</li>);
 ```
 
 > Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets
