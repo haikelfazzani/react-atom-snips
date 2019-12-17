@@ -1,9 +1,10 @@
 {
   "name": "react-atom-snips",
   "version": "1.6.0",
-  "description": "Reactjs snippets vscode like",
+  "description": "Reactjs snippets vscode like for Atom",
   "keywords": [
     "react",
+    "react-snippets",
     "snippets",
     "hooks"
   ],
@@ -14,5 +15,8 @@
   },
   "repository": {
     "url": "https://github.com/haikelfazzani/react-atom-snips"
+  },
+  "bugs": {
+    "url": "https://github.com/haikelfazzani/react-atom-snips/issues"
   }
 }

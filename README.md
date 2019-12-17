@@ -53,4 +53,15 @@ const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) => <li key={number}>{number}</li>);
 ```
 
-> Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets
+## Contributing
+
+1.	Fork repository
+2.	Create your branch: `git checkout -b my-new-branch`
+3.	Commit your changes: `git commit -m 'Add some new features'`
+4.	Push to the branch: `git push origin my-new-branch`
+5.  Submit a pull request
+
+> Contributions are greatly appreciated. Please feel free..
+
+## License  
+MIT
