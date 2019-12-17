@@ -1,35 +1,47 @@
-# React js snippets
+# ❤️ React js snippets
 
-- React import -> **imr**
+## Usage
+```
+apm install atom-react
+```
 
-- React import component -> **imrc**
+## Snippets
 
-- Export default -> **ed**
-
-- React function component -> **rfc**
-
-- React class component -> **rcc**
-
-- React createRef -> **createref**
-
-- React createContext -> **createcontext**
+| Name  |  Snippet |
+|---|---|
+| ```import React from 'react';```| **imr** |
+| ```import React,{ Component } from 'react';``` | **imrc** |
+| Export default | **ed** |
+| function component | **rfc** |
+| class component | **rcc** |
+| createRef | **createref** |
+| createContext | **createcontext** |
 
 ### Hooks
-- React useState hook -> **usestate**
-
-- React useEffect hook -> **useeffect**
-
-- React useCallback hook -> **usecallback**
-
-- React useContext hook -> **usecontext**
-
-- React useReducer hook -> **usereducer**
-
-- React useMemo hook -> **usememo**
-
-- React useRef hook -> **useref**
+| Name  |  Snippet |
+|---|---|
+| useState hook| **usestate** |
+| useEffect hook | **useeffect** |
+| useCallback hook | **usecallback** |
+| useContext hook | **usecontext** |
+| useReducer hook | **usereducer** |
+| useMemo hook | **usememo** |
+| useRef hook | **useref** |
 
 ### Custom hooks
-- React useFetch custom hook -> **usefetch**  
+| Name  |  Snippet |
+|---|---|
+| useFetch custom hook| **usefetch** |
+
+### ReactDom
+| Name  |  Snippet |
+|---|---|
+| render() | **rrdom** |
+| createPortal() | **rcp** |
+
+### Typechecking With PropTypes
+| Name  |  Snippet |
+|---|---|
+| PropTypes | **rproptypes** |
 
 > Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets

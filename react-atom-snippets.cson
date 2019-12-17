@@ -127,3 +127,19 @@
 
     export default useFetch
     """
+
+  'React render()':
+    'prefix': 'rrdom'
+    'body': """// Render a React element into the DOM
+    ReactDOM.render(element, container[, callback])
+    """
+
+  'React createPortal()':
+    'prefix': 'rcp'
+    'body': """ReactDOM.createPortal(child, container)"""
+
+  'React createPortal()':
+    'prefix': 'rproptypes'
+    'body': """NameOfComponent.propTypes = {
+      name: PropTypes.string
+    };"""
