@@ -138,7 +138,7 @@
     'prefix': 'rcp'
     'body': """ReactDOM.createPortal(child, container)"""
 
-  'React createPortal()':
+  'React Typechecking With PropTypes':
     'prefix': 'rproptypes'
     'body': """NameOfComponent.propTypes = {
       name: PropTypes.string
