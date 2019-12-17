@@ -56,6 +56,7 @@
   'React useEffect hook':
     'prefix': 'useeffect'
     'body': """useEffect(() => {
+
     }, []);"""
 
   'React useCallback hook':
@@ -141,5 +142,27 @@
   'React Typechecking With PropTypes':
     'prefix': 'rproptypes'
     'body': """NameOfComponent.propTypes = {
-      name: PropTypes.string
+      optionalArray: PropTypes.array,
+      optionalBool: PropTypes.bool,
+      optionalFunc: PropTypes.func,
+      optionalNumber: PropTypes.number,
+      optionalObject: PropTypes.object,
+      optionalString: PropTypes.string,
+      optionalSymbol: PropTypes.symbol,
+
+      // Anything that can be rendered: numbers, strings, elements or an array
+      // (or fragment) containing these types.
+      optionalNode: PropTypes.node,
+
+      // A React element.
+      optionalElement: PropTypes.element,
+
+      // A React element type (ie. MyComponent).
+      optionalElementType: PropTypes.elementType,
     };"""
+
+  'React List using map()':
+    'prefix': 'rcmap'
+    'body': """const numbers = [1, 2, 3, 4, 5];
+    const listItems = numbers.map((number) => <li key={number}>{number}</li>);
+    """
