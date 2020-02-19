@@ -1,4 +1,4 @@
-# React js snippets for Atom
+# ⚛️ React js snippets for Atom
 
 ## Usage
 ```
