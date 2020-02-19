@@ -1,4 +1,4 @@
-# ❤️ React js snippets for Atom
+# React js snippets for Atom
 
 ## Usage
 ```
@@ -32,6 +32,7 @@ apm install react-atom-snips
 | Name  |  Snippet |
 |---|---|
 | useFetch custom hook| **usefetch** |
+| useStore custom hook| **usestore** |
 
 ### ReactDom
 | Name  |  Snippet |

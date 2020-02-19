@@ -99,11 +99,40 @@
     'prefix': 'useref'
     'body': """const refContainer = useRef(initialValue);"""
 
+  'React useStore custom hook':
+    'prefix': 'usestore'
+    'body': """import React, { createContext, useContext, useReducer } from 'react';
+    // global state
+    const StoreContext = createContext();
+    const initialState = { count: 0 };
+
+    const reducer = (state, action) => {
+      switch (action.type) {
+        case "increment":
+          return { ...state, count: state.count + 1 };
+
+        default:
+          return state;
+      }
+    }
+
+    export const StoreProvider = ({ children }) => {
+      const [state, dispatch] = useReducer(reducer, initialState);
+
+      return (
+        <StoreContext.Provider value={{ state, dispatch }}>
+          {children}
+        </StoreContext.Provider>
+      )
+    }
+
+    export const useStore = () => useContext(StoreContext);"""
+
   'React useFetch custom hook':
     'prefix': 'usefetch'
     'body': """import React from 'react';
 
-    const useFetch = (url, options) => {
+    export default function useFetch (url, options) {
 
       const [response, setResponse] = React.useState(null);
       const [error, setError] = React.useState(null);
@@ -124,8 +153,6 @@
       }, []);
       return { response, error, isLoading };
     };
-
-    export default useFetch;
     """
 
   'React render()':
